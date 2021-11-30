@@ -32,17 +32,17 @@ function submitHandler() {
 // subtraction
 
 function subtraction(input1,input2) {
-  const number1 = -input1;
-  const number2 = -input2;
+  const number1 = +input1;
+  const number2 = +input2;
   const sub = number1 - number2;
   return sub;
 }
 
-function submitHandler() {
+function submitHandler1() {
   event.preventDefault(); //. to prevent the page from reloading
 
-  const first = document.getElementById("firstInput");
-  const second = document.getElementById("secondInput");
+  const first = document.getElementById("firstInput1");
+  const second = document.getElementById("secondInput1");
 
   console.log("firstInput is " + first.value);
   console.log("secondInput is " + second.value);
@@ -50,55 +50,55 @@ function submitHandler() {
   const sub = subtraction(first.value, second.value);
   console.log("Number is = " + sub);
 
-  const div = document.getElementById("answer");
+  const div = document.getElementById("answer1");
   div.innerText = sub;
 }
 // multiplication
 
-function addition(param1, param2) {
-  const number1 = +param1;
-  const number2 = +param2;
-  const sum = number1 * number2;
-  return sum;
+function muliplication(fun1, fun2) {
+  const number1 = +fun1;
+  const number2 = +fun2;
+  const multi = number1 * number2;
+  return multi;
 }
 
 function submitHandler() {
   event.preventDefault(); //. to prevent the page from reloading
 
-  const firstInput = document.getElementById("firstInput");
-  const secondInput = document.getElementById("secondInput");
+  const vat1 = document.getElementById("firstInput2");
+  const vat2 = document.getElementById("secondInput2");
 
-  console.log("firstInput is " + firstInput.value);
-  console.log("secondInput is " + secondInput.value);
+  console.log("firstInput is " + vat1.value);
+  console.log("secondInput is " + vat2.value);
 
-  const sum = addition(firstInput.value, secondInput.value);
-  console.log("Sum is = " + sum);
+  const multi = muliplication(vat1.value, vat2.value);
+  console.log("Number is = " + multi);
 
-  const div = document.getElementById("answer");
-  div.innerText = sum;
+  const div = document.getElementById("answer2");
+  div.innerText = multi;
 }
 
 // division
 
-function addition(param1, param2) {
-  const number1 = +param1;
-  const number2 = +param2;
-  const sum = number1 + number2;
-  return sum;
+function division(main1, main2) {
+  const number1 = +main1;
+  const number2 = +main2;
+  const divi = number1 / number2;
+  return divi;
 }
 
 function submitHandler() {
   event.preventDefault(); //. to prevent the page from reloading
 
-  const firstInput = document.getElementById("firstInput");
-  const secondInput = document.getElementById("secondInput");
+  const pat1 = document.getElementById("firstInput3");
+  const pat2 = document.getElementById("secondInput3");
 
-  console.log("firstInput is " + firstInput.value);
-  console.log("secondInput is " + secondInput.value);
+  console.log("firstInput is " + pat1.value);
+  console.log("secondInput is " + pat2.value);
 
-  const sum = addition(firstInput.value, secondInput.value);
-  console.log("Sum is = " + sum);
+  const min = division(pat1.value, pat2.value);
+  console.log("Number is = " + min);
 
-  const div = document.getElementById("answer");
-  div.innerText = sum;
+  const div = document.getElementById("answer3");
+  div.innerText = min;
 }
